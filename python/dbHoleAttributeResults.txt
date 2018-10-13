@@ -1,0 +1,100 @@
+DLC203-R3783M:dev jkramer$ python dbHoleModelBuilder.py 
+/Applications/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:41: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+reading from db...
+start time:  2018-10-13 16:20:52
+end time:  2018-10-13 16:20:52
+db read done!...
+dbread done, preprocssing
+preprocess done, splitting test/training
+hit green mean():  0.626686936388
+hit fw .mean():  0.463465146184
+Appr_Shot_Prox_to_the_Hole .mean():  346.296310719
+made Putts  .mean():  38.625407243
+Putts  .mean():  1.57181550504
+Par .mean():  3.95120785811
+Actual_Yard  .mean():  343.037025145
+splitting test/training done, running randomForest
+in randomForest
+in randomForest created classifier
+in randomForest created model
+in randomForest created prediction
+y_pred [5 5 3 ... 5 3 3]
+-----------------------
+Random Forest results: 
+-----------------------
+('Random Forest Accuracy: ', 0.9998806812943135)
+('Random Forest confusion matrix: ', array([[   1193,       0,       0,       4,       0,       0,       0,
+              0,       0,       0,       0,       0,       0,       0,
+              0],
+       [      0,     241,       0,       0,       0,       0,       0,
+              0,       0,       0,       0,       0,       0,       0,
+              0],
+       [      0,       0,   75030,       0,       0,       0,       0,
+              0,       0,       0,       0,       0,       0,       0,
+              0],
+       [      0,       0,       0,  639854,       0,       0,       0,
+              0,       0,       0,       0,       0,       0,       0,
+              0],
+       [      0,       0,       0,       0,   30755,       0,       0,
+              0,       0,       0,       0,       0,       0,       0,
+              0],
+       [      0,       0,       0,       0,       0, 1255566,       0,
+              0,       0,       0,       0,       0,       0,       0,
+              0],
+       [      0,       0,       0,       0,       0,       0,  496461,
+              1,       0,       0,       0,       0,       0,       0,
+              0],
+       [      0,       0,       0,       0,       0,       1,       1,
+          70850,       1,       0,       0,       0,       0,       0,
+              0],
+       [      0,       0,       0,       0,       0,       1,       0,
+             31,    9487,       3,       0,       0,       0,       0,
+              0],
+       [      0,       0,       0,       0,       0,       0,       0,
+             12,      75,    1393,       3,       1,       0,       0,
+              0],
+       [      0,       0,       0,       0,       0,       0,       1,
+              5,      38,      64,     178,       2,       0,       0,
+              0],
+       [      0,       0,       0,       0,       0,       0,       0,
+              1,       4,      15,      25,       5,       0,       0,
+              0],
+       [      0,       0,       0,       0,       0,       0,       0,
+              0,       0,       3,       6,       3,       1,       0,
+              0],
+       [      0,       0,       0,       0,       0,       0,       0,
+              1,       1,       1,       2,       0,       0,       0,
+              0],
+       [      0,       0,       0,       0,       0,       0,       0,
+              0,       1,       1,       0,       0,       0,       0,
+              0]]))
+Random Forest classification_report               precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00      1197
+          1       1.00      1.00      1.00       241
+          2       1.00      1.00      1.00     75030
+          3       1.00      1.00      1.00    639854
+          4       1.00      1.00      1.00     30755
+          5       1.00      1.00      1.00   1255566
+          6       1.00      1.00      1.00    496462
+          7       1.00      1.00      1.00     70853
+          8       0.99      1.00      0.99      9522
+          9       0.94      0.94      0.94      1484
+         10       0.83      0.62      0.71       288
+         11       0.45      0.10      0.16        50
+         12       1.00      0.08      0.14        13
+         13       0.00      0.00      0.00         5
+         14       0.00      0.00      0.00         2
+
+avg / total       1.00      1.00      1.00   2581322
+
+name                            score
+Par                         0.10429
+Putts                       0.0908204
+Actual_Yard                 0.0458053
+Hit_Green                   0.0452852
+Made_Putt_Distance          0.0392666
+Appr_Shot_Prox_to_the_Hole  0.0229279
+Hit_Fwy                     0.0116234
+DLC203-R3783M:dev jkramer$ 

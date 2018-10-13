@@ -1,0 +1,116 @@
+DLC203-R3783M:dev jkramer$ python dbRoundModelBuilder.py 
+/Applications/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:41: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+reading from db...
+start time:  2018-10-13 16:53:14
+end time:  2018-10-13 16:53:14
+db read done!...
+birds.mean():  3.49176473053
+boges.mean():  3.00213460504
+pars.mean():  11.326145992
+greens in reg.mean():  11.134469301
+scrambling 10-20y attempt.mean():  2.07910954472
+scrambling 10-20y success.mean():  1.32941071055
+sand save success.mean():  0.766240554344
+coursepar.mean():  71.1167926087
+driving_distance_total_drives.mean():  3104.65651165
+course_yardage.mean():  7252.21121432
+Putting_20'_-_25'_putts_made.mean():  0.142732694165
+Putting_10'_-_15'_putts_made.mean():  0.651225072927
+y_pred [69 74 73 ... 74 76 80]
+-----------------------
+Random Forest results: 
+-----------------------
+('Random Forest Accuracy: ', 0.9764331074306114)
+('Random Forest confusion matrix: ', array([[817,   0,   0, ...,   0,   0,   0],
+       [  0,   0,   0, ...,   0,   0,   0],
+       [  0,   0,   0, ...,   0,   0,   0],
+       ...,
+       [  0,   0,   0, ...,   0,   0,   0],
+       [  0,   0,   0, ...,   0,   0,   0],
+       [  0,   0,   0, ...,   0,   0,   0]]))
+Random Forest classification_report               precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00       817
+         23       0.00      0.00      0.00         3
+         24       0.00      0.00      0.00         2
+         25       0.00      0.00      0.00         0
+         26       0.00      0.00      0.00         1
+         30       1.00      1.00      1.00         2
+         31       1.00      1.00      1.00         5
+         32       1.00      1.00      1.00         1
+         33       1.00      1.00      1.00         1
+         35       0.00      0.00      0.00         1
+         36       0.86      1.00      0.92         6
+         37       0.44      1.00      0.62         4
+         38       0.00      0.00      0.00         5
+         39       1.00      1.00      1.00         2
+         40       1.00      1.00      1.00         6
+         41       1.00      0.71      0.83         7
+         42       1.00      0.83      0.91         6
+         43       0.54      1.00      0.70         7
+         44       0.00      0.00      0.00         8
+         45       0.64      0.88      0.74         8
+         46       1.00      1.00      1.00         9
+         47       0.74      0.88      0.80        16
+         48       0.50      0.77      0.61        13
+         49       0.08      0.08      0.08        12
+         50       0.29      0.14      0.19        14
+         51       1.00      0.56      0.72        16
+         52       0.40      0.50      0.44         8
+         53       0.81      1.00      0.89        17
+         54       0.82      1.00      0.90         9
+         55       1.00      0.83      0.91        12
+         56       1.00      1.00      1.00        19
+         57       0.71      1.00      0.83        22
+         58       0.65      0.62      0.64        24
+         59       0.33      0.06      0.10        18
+         60       0.42      0.61      0.50        18
+         61       0.92      0.46      0.61        74
+         62       0.74      0.68      0.71       183
+         63       0.86      0.87      0.87       462
+         64       0.94      0.94      0.94      1165
+         65       0.98      0.98      0.98      2551
+         66       0.99      0.99      0.99      5047
+         67       1.00      1.00      1.00      8066
+         68       1.00      1.00      1.00     11735
+         69       1.00      1.00      1.00     14975
+         70       1.00      1.00      1.00     16967
+         71       1.00      1.00      1.00     17188
+         72       0.99      1.00      0.99     15770
+         73       0.99      0.99      0.99     13358
+         74       0.98      0.99      0.99     10355
+         75       0.96      0.98      0.97      7491
+         76       0.93      0.95      0.94      5242
+         77       0.89      0.92      0.90      3426
+         78       0.82      0.82      0.82      2219
+         79       0.79      0.72      0.75      1370
+         80       0.67      0.59      0.63       777
+         81       0.57      0.40      0.47       459
+         82       0.48      0.34      0.40       258
+         83       0.45      0.30      0.36       164
+         84       0.23      0.07      0.10        90
+         85       0.31      0.11      0.16        45
+         86       0.00      0.00      0.00        28
+         87       1.00      0.07      0.12        15
+         88       0.00      0.00      0.00        11
+         89       0.50      0.20      0.29         5
+         90       0.00      0.00      0.00         4
+         92       0.00      0.00      0.00         1
+         93       0.00      0.00      0.00         1
+
+avg / total       0.97      0.98      0.98    140621
+
+name                                  score
+Pars                             0.0818687
+Bogies                           0.0664581
+Birdies                          0.0634355
+Course_Par                       0.0388112
+Course_Yardage                   0.0295495
+Driving_DistanceTotal_Drives     0.0203698
+Total_Greens_in_Regulation       0.0193413
+_Scrambling_10-20_Yardsattempts  0.00951533
+Sand_Save_%#_Saves               0.00855463
+Scrambling_10-20_Yardssuccesses  0.00794794
+Putting___10'-15'putts_made      0.00651438
+Putting_20'-25'putts_made        0.00311275
